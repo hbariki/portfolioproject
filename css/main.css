@@ -1,0 +1,80 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing: border-box
+}
+html, body,main {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color:darkgrey;
+    font-weight:300;
+    display:flex;
+    flex-box:wrap;
+}
+
+.text-thin {
+    font-weight:100;
+    color:#8a6d3b;
+}
+
+.title-super {
+    font-size : 40px;
+    margin-top: 30px;
+    color:brown;
+}
+.title-logo {
+    margin-top : 20px;
+}
+
+
+/*  styles for zocial classs for icons like facebook,googleplus,linkedin*/
+[class*="zocial-"]:before {
+                      color: #2b542c;
+                      display: inline-block;
+                      font-family: 'zocial', san-serif;
+                      text-shadow: 3px 3px 3px #aaa;
+                      width: 2em;
+                      font-size:30px;
+                  }
+
+div#social a {
+    margin: 0 1em 0 0;
+}
+
+div#social a:last-of-type {
+    margin: 0;
+}
+
+div#social {
+    line-height: 2em;
+}
+/* Adding cursors to images*/
+.img-responsive {
+    cursor:pointer;
+}
+/*width and height for middle images*/
+.middle-img {
+    width:1200px;
+    height:400px;
+
+}
+/*adding style to figcaption*/
+figcaption{
+    color:chocolate;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    font-size:1em;
+}
+/*Media query for title-logo*/
+@media screen and (max-width: 549px) {
+    .title-logo {
+        height: 20px;
+    }
+}
+
+
